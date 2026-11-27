@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Page</title>
+</head>
+<body>
+
+  <!-- Skip link: lets keyboard users jump past the navigation -->
+  <a href="#main">Skip to main content</a>
+
+  <nav aria-label="Main navigation">
+    <a href="#">Home</a>
+    <a href="#">Help</a>
+  </nav>
+
+  <main id="main">
+    <h1>Accessible Page</h1>
+
+    <!-- Image with alt text and a button with an ARIA label -->
+    <img src="images/image of college.jpeg" alt="Students walking on the college campus" width="316" height="26">
+    <button type="button" aria-label="Close">X</button>
+
+    <p>
+      <label for="search">Search:</label>
+      <input type="text" id="search" name="search">
+    </p>
+  </main>
+
+</body>
+</html>

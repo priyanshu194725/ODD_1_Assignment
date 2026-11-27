@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Schedule</title>
+  <style>
+    .table-wrap {
+      overflow-x: auto;
+      max-width: 100%;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    .outer {
+      min-width: 600px;
+    }
+
+    .outer th,
+    .outer td {
+      border: 1px solid #555;
+      padding: 12px 16px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    .inner th,
+    .inner td {
+      border: 1px solid #555;
+      padding: 10px 14px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="table-wrap">
+    <table class="outer">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Lab Batches</th>
+          <th>Faculty</th>
+          <th>Room</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Friday</td>
+          <td>
+            <!-- Table placed inside a cell -->
+            <table class="inner">
+              <tr>
+                <th>Batch</th>
+                <th>System</th>
+              </tr>
+              <tr>
+                <td>A1</td>
+                <td>PC 1-20</td>
+              </tr>
+              <tr>
+                <td>A2</td>
+                <td>PC 21-40</td>
+              </tr>
+            </table>
+          </td>
+          <td>Dr. Sharma</td>
+          <td>Lab 2</td>
+          <td>2-4 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
